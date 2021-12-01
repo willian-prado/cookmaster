@@ -1,6 +1,7 @@
 const usersModel = require('../../model/users');
 
 const err = {
+  isJoi: false,
   type: 'CONFLICT', 
   code: 409, 
   message: 'Email already registered', 

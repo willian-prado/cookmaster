@@ -5,9 +5,11 @@ const validateUser = require('../../utils/validateUser');
 
 module.exports = rescue(async (req, res, next) => {
   const { name, email, password, role = 'user' } = req.body;
+  console.log(req.body);
   
   const error = validateUser({ name, email, password, role });
   if (error) {
+    console.log(error);
     return next(error);
   }
 

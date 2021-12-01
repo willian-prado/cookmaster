@@ -1,10 +1,9 @@
 const { INTERNAL_SERVER_ERROR } = require('http-status-codes').StatusCodes;
-const { BAD_REQUEST } = require('http-status-codes').StatusCodes;
 
 module.exports = async (err, _req, res, _next) => {
   if (err.isJoi) {
-    return res.status(BAD_REQUEST).json(
-      { message: 'Invalid entries. Try again.' },
+    return res.status(err.code).json(
+      { message: err.message },
     );
   }
 
