@@ -14,7 +14,7 @@ const err = {
 module.exports = rescue(async (req, res, next) => {
   const token = req.headers.authorization;
 
-  if (!token) return next(err);
+  if (!token) return res.status(err.code).json({ message: 'missing auth token' });
 
   try {
     const decoded = jwt.verify(token, secret);
