@@ -14,14 +14,15 @@ const err = {
 module.exports = rescue(async (req, res, next) => {
   const token = req.headers.authorization;
 
-  if (!token) return next({ err });
+  if (!token) return next(err);
 
-  const decoded = jwt.verify(token, secret);
-
-  const user = await userModel.getByEmail(decoded.email);
-
-  if (!user) return next({ err });
-
-  req.user = user;
-  next();
+  try {
+    const decoded = jwt.verify(token, secret);
+    const user = await userModel.getByEmail(decoded.email);
+    if (!user) return next(err);
+    req.user = user;
+    next();
+  } catch (e) {
+    next(err); 
+  }
 });
