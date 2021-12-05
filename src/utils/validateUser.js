@@ -7,12 +7,12 @@ const err = {
   message: 'Invalid entries. Try again.',
 };
 
-module.exports = (user) => {
+module.exports = (user, role) => {
   const { error } = Joi.object({
     name: Joi.string().required(),
     email: Joi.string().email().required(),
     password: Joi.required(),
-    role: Joi.string().valid('user').required(),
+    role: Joi.string().valid(role).required(),
   }).validate(user);
   
   if (error) return err;
