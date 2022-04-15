@@ -23,7 +23,7 @@ Clientes podem somente disparar ações nas receitas criadas por eles. Já uma p
 - Autenticar rotas do Express, usando o token JWT;
 - Fazer upload de arquivos em APIs REST;
 - Salvar arquivos no servidor através de uma API REST;
-- Consultar arquivos do servidor através de uma api REST.
+- Consultar arquivos do servidor através de uma API REST.
 
 **Tecnologias utilizadas**
 - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" align="center" height="30"/> - JavaScript</a>
