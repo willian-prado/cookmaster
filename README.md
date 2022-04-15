@@ -30,13 +30,14 @@ Clientes podem somente disparar ações nas receitas criadas por eles. Já uma p
 - <a href="https://nodejs.org"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" title="Node.js" align="center" height="35"/> - Node.js</a>
 - <a href="https://expressjs.com"><img src="https://images.tute.io/tute/topic/express-js.png" title= "Express" align="center" height="35"/> - Express</a>
 - <a href="https://www.mongodb.com/"><img src="https://www.svgrepo.com/show/331488/mongodb.svg" title="MongoDB" align="center" height="35"/> - MongoDB</a>
+- <a href="https://jwt.io/introduction"><img src="https://vegibit.com/wp-content/uploads/2018/07/JSON-Web-Token-Authentication-With-Node.png" title= "JWT" align="center" height="30"/> - JWT</a>
 
 ---
 
 ### Endpoints disponíveis na aplicação:
 
-* [`POST`] Cadastrar usuários: `/users`;
-* [`POST`] Cadastrar administradores: `/users/admin`;
+* [`POST`] Cadastrar usuários clientes: `/users`;
+* [`POST`] Cadastrar usuários administradores: `/users/admin`;
 * [`POST`] Login de usuários: `/login`;
 * [`POST`] Cadastrar receitas: `/recipes`;
 * [`GET`] Listar receitas: `/recipes`;
@@ -44,7 +45,7 @@ Clientes podem somente disparar ações nas receitas criadas por eles. Já uma p
 * [`PUT`] Atualizar uma receita pelo seu id: `/recipes/:id`;
 * [`DELETE`] Remover uma receita pelo seu id: `/recipes/:id`;
 * [`POST`] Cadastrar a imagem de uma receita: `/recipes/:id/image/`;
-* [`GET`] Visualizar a imagem de uma receita: `/images/<id-da-receita>.jpeg`
+* [`GET`] Visualizar a imagem de uma receita: `/images/<id-da-receita>.jpeg`;
 
 ---
 
