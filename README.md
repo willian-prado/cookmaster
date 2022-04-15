@@ -4,7 +4,7 @@
 
 **Contexto**
 
-Neste projeto devemos utilizar dois novos aprendizados: (1) criação de um *middleware* de autenticação com o pacote `JWT`, que permite a gerar e validar de tokens; (2) criação de um *middleware* para upload de arquivos com o pacote `multer`, que lida com requests no formato Form Data ( Content-Type: multipart/form-data).
+Neste projeto devemos utilizar dois novos aprendizados: (1) criação de um *middleware* de autenticação com o pacote `JWT`, que permite a gerar e validar de tokens; (2) criação de um *middleware* para upload de arquivos com o pacote `multer`, que lida com requests no formato Form Data ( Content-Type: multipart/form-data) capaz de transmitir arquivos.
 
 **Objetivo do projeto**
 
