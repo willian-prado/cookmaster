@@ -4,14 +4,18 @@
 
 **Contexto**
 
-Neste projeto devemos utilizar dois novos aprendizados: (1) criação de um *middleware* de autenticação com o pacote `JWT`, que permite a gerar e validar de tokens; (2) criação de um *middleware* para upload de arquivos com o pacote `multer`, que lida com requests no formato Form Data ( Content-Type: multipart/form-data) capaz de transmitir arquivos.
+Neste projeto devemos praticar dois novos aprendizados: 
+
+ (1) criação de um *middleware* de autenticação com o pacote `JWT`, que permite a gerar e validar de tokens;
+ 
+ (2) criação de um *middleware* para upload de arquivos com o pacote `multer`, que lida com requests no formato Form Data ( Content-Type: multipart/form-data) capaz de transmitir arquivos.
 
 **Objetivo do projeto**
 
-Desenvolver uma API RESTful usando a arquitetura MSC (Models, Services e Controllers) e com operações básicas de Criação, Leitura, Atualização e Exclusão (ou `CRUD`) e anco MongoDB para gestâo de dados. Deve ser criado o banco de dados `Cookmaster` com as coleções `recipes` e `users`.
+Desenvolver uma API RESTful usando a arquitetura MSC (Models, Services e Controllers) e com operações básicas de Criação, Leitura, Atualização e Exclusão (ou `CRUD`) e banco MongoDB para gestâo de dados. Deve ser criado o banco de dados `Cookmaster` com as coleções `recipes` e `users`.
 Nesta aplicação, deve ser possível fazer o cadastro e login de usuários (que podem ser clientes ou administradores).
-Apenas pessoas cadastradas e autenticadas devem poder criar, acessar, modificar e deletar suas próprias receitas.
-Clientes podem somente disparar ações nas receitas criadas por eles. Já uma pessoa administradora pode disparar qualquer ação em qualquer receita.
+Apenas pessoas cadastradas e autenticadas devem poder criar, acessar, modificar e deletar receitas.
+Clientes podem somente disparar ações nas receitas criadas por eles, enquanto administradores podem disparar qualquer ação em qualquer receita.
 
   * A autenticação deverá ser feita via `JWT`.
   * Deverá ser possível adicionar uma imagem à uma receita, utilizando o upload de arquivos fornecido pelo `multer`.
