@@ -1,14 +1,14 @@
 ## Projeto Cookmaster
 
-> Nono projeto do módulo de Back-end do curso de desenvolvimento web da Trybe.
+> Nono projeto do módulo de Back-end do curso de desenvolvimento web da [Trybe](https://www.betrybe.com/)
 
 **Contexto**
 
 Neste projeto devemos praticar dois novos aprendizados: 
 
- (1) criação de um *middleware* de autenticação com o pacote `JWT`, que permite a gerar e validar de tokens;
+ (1) Autenticação de usuários com o pacote `JWT`, que permite a gerar e validar de tokens;
  
- (2) criação de um *middleware* para upload de arquivos com o pacote `multer`, que lida com requests no formato Form Data ( Content-Type: multipart/form-data) capaz de transmitir arquivos.
+ (2) Fazer upload de arquivos com o pacote `multer`, que lida com requests no formato Form Data ( Content-Type: multipart/form-data) capaz de transmitir arquivos.
 
 **Objetivo do projeto**
 
@@ -512,3 +512,7 @@ O resultado do numero total de linhas cobertas deve ser igual ou maior que `100`
 Nenhum teste pode ser pulado;
 O resultado do percentual total de cobertura deve ser igual ou maior que `90`;
 O resultado do numero total de linhas cobertas deve ser igual ou maior que `150`.
+
+---
+
+[Ir para a lista de projetos](https://github.com/willian-prado/trybe-records)
